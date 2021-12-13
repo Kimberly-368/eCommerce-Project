@@ -13,9 +13,7 @@ class SignIn extends Component {
     this.props.setNavbarLinks([]);
   }
 
-  onSubmit = (fields) => {
-    console.log(fields);
-  }
+ 
 
   render() {
     return (

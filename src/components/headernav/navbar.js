@@ -7,9 +7,9 @@ class Navbar extends Component {
 
   handleOnClick = (link) => {
     this.props.changeNavbarActive(link._id)
-      if(this.props.onClick) {
-        this.props.onClick(link._id);
-      }
+    if(this.props.onClick) {
+      this.props.onClick(link._id);
+    }
   }
 
   render() {
@@ -19,7 +19,7 @@ class Navbar extends Component {
           this.props.navbarLinks.map((link, index) => {
             return (
               <a className={`navbar__link ${link.active ? 'green-text' : ''}`} key={index} onClick={() => this.handleOnClick(link)}>
-                  {link.title}
+                {link.title}
               </a>
             )
           })

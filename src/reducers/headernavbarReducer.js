@@ -32,7 +32,7 @@ export default function(state = INITIAL_STATE , action) {
       })
       return{
         ...state,
-        navbarLinks: action.payload
+        navbarLinks
       }
     default: return state;
   }

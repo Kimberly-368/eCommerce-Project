@@ -12,11 +12,12 @@
   &__input{
     box-sizing: border-box;
     height: 39px;
-    width: 426px;
+    width: 447px;
     border: 1px solid #E6E6E6;
     border-radius: 20px;
     color: #333;
     font-size: 18px;
+    margin-right: 55px;
   }
 }
 
@@ -38,5 +39,35 @@
   &__gray-button {
     background: #999;
     width: 137px;
+  }
+}
+
+.form-button-long-gray {
+  display: grid;
+  grid-gap: 6.5px;
+
+  &__button {
+    height: 38px;
+    width: 243px;
+    border-radius: 20px;
+    background-color: #999; 
+    
+    font-size: 16px;
+    color: white;
+    
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__label{
+    color: #808080;
+    font-size: 14px;
+  }
+}
+
+.form-button, .form-button-long-gray {
+  &__button {
+    border: none;
   }
 }

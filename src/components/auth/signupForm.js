@@ -25,7 +25,7 @@ class SignUpForm extends Component {
     ]
 
     return (
-      <form  onSubmit={this.onSubmit} className={`${className} sign-up-form`}>
+      <form  onSubmit={this.handleSubmit} className={`${className} sign-up-form`}>
         <Field className="sign-up-form__name" 
         type="name" 
         title="Name"

@@ -1,6 +1,7 @@
 .account-information{
   grid-row: content-s/content-e;
   grid-column: s/e;
+  padding-left: 150px;
 
   // &__page-title {
 
@@ -45,5 +46,9 @@
     input { 
       width: 200px;
     }
-  }  
+  } 
+  
+  &__change-password {
+    transform: translateY(38px);
+  }
 }

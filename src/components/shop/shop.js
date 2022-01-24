@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
-import * as action from '../../actions';
+import * as actions from '../../actions';
 
 class Shop extends Component {
 
@@ -14,11 +14,11 @@ class Shop extends Component {
       }
     ]
     this.props.setHeaderLinks(headerLinks);
-    // fetch shop products action creator
-    // set the header links
+    this.props.fetchShopCategories();
     // fetch navbar links
       // set the navbar links
       // filter products with links
+    // fetch shop products action creator
   }
 
   render() {
@@ -36,6 +36,6 @@ function mapStateToProps(state) {
   return { state }
 }
 
-Shop = connect(mapStateToProps, action)(Shop);
+Shop = connect(mapStateToProps, actions)(Shop);
 
 export default Shop;

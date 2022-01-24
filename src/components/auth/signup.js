@@ -10,7 +10,7 @@ class SignUp extends Component {
 
   componentDidMount() {
     this.props.setHeaderLinks([]);
-    this.props.set([]);
+    this.props.setNavbarLinks([]);
   }
 
   onSubmit = (fields) => {
